@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vedant Sawant — Developer & Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NOISE OVERLAY ─────────────────────────────── -->
+  <div class="noise"></div>
+
+  <!-- ─── CURSOR ────────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ─── NAV ──────────────────────────────────────── -->
+  <nav id="nav">
+    <div class="nav-logo">VS<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── MOBILE MENU ───────────────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ──────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">
+        <span class="mono">&lt;building from zero&gt;</span>
+      </p>
+      <h1 class="hero-name reveal r2">
+        Vedant<br /><em>Sawant</em>
+      </h1>
+      <p class="hero-tagline reveal r3">
+        I turn curiosity into code — <br class="desktop-break"/>one commit at a time.
+      </p>
+      <p class="hero-sub reveal r4">
+        B.Tech IT student at KJ Somaiya · Aspiring Software Developer ·<br/>
+        Currently deep in Python, Web Dev & Problem Solving.
+      </p>
+      <div class="hero-cta reveal r5">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Let's Talk →</a>
+      </div>
+    </div>
+
+    <div class="hero-badge reveal r6">
+      <div class="badge-ring">
+        <svg viewBox="0 0 120 120" class="badge-svg">
+          <defs>
+            <path id="circle-text" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"/>
+          </defs>
+          <text class="badge-text">
+            <textPath href="#circle-text" startOffset="0%">
+              AVAILABLE FOR INTERNSHIP · OPEN TO WORK · 
+            </textPath>
+          </text>
+        </svg>
+        <span class="badge-dot"></span>
+      </div>
+    </div>
+
+    <div class="scroll-hint reveal r7">
+      <span class="mono">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono accent">01 /</span> About
+      </div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">
+            I don't just learn tech —<br />
+            <em>I build a mindset.</em>
+          </h2>
+        </div>
+        <div class="about-right">
+          <p>
+            First-year B.Tech IT student at KJ Somaiya, Mumbai. I picked up 
+            programming not for grades but because I wanted to build things that matter. 
+            Python felt logical. Web dev felt visual. So I went all in on both.
+          </p>
+          <p>
+            Outside code: I edit videos (DaVinci Resolve is my canvas), 
+            write content, and track habits obsessively. 
+            I believe consistency compounds — in tech and in life.
+          </p>
+          <p>
+            Right now I'm building projects, earning certifications, 
+            and actively looking for <strong>internship opportunities</strong> 
+            where I can contribute and grow fast.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2025</span>
+              <span class="stat-label">Started</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────── -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono accent">02 /</span> Skills
+      </div>
+      <h2 class="section-title">What I work with</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">{ }</span>
+            <h3>Programming</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="pill">Python</span></li>
+            <li><span class="pill">C Programming</span></li>
+            <li><span class="pill">C++</span></li>
+            <li><span class="pill">Problem Solving</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">&lt;/&gt;</span>
+            <h3>Web & Dev Tools</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="pill">HTML / CSS / JS</span></li>
+            <li><span class="pill">Git & GitHub</span></li>
+            <li><span class="pill">VS Code</span></li>
+            <li><span class="pill">Python Libraries</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">◈</span>
+            <h3>Creative & Soft</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="pill">DaVinci Resolve</span></li>
+            <li><span class="pill">CapCut</span></li>
+            <li><span class="pill">Content Writing</span></li>
+            <li><span class="pill">Analytical Thinking</span></li>
+            <li><span class="pill">Social Media</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">⬡</span>
+            <h3>Currently Learning</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="pill active">Full Stack Web Dev</span></li>
+            <li><span class="pill active">AI & ML Basics</span></li>
+            <li><span class="pill active">DSA</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono accent">03 /</span> Projects
+      </div>
+      <h2 class="section-title">Things I've built</h2>
+      <p class="section-sub">More projects coming soon. This is just the beginning.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-num mono">001</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Python</span><span>Automation</span>
+            </div>
+            <h3>Python Automation Scripts</h3>
+            <p>A collection of productivity scripts built while learning Python — file organizers, web scrapers, and small CLI tools that solve real everyday problems.</p>
+            <div class="project-footer">
+              <a href="https://github.com/vedantsawant" target="_blank" class="project-link">GitHub →</a>
+              <span class="project-status">In Progress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num mono">002</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>The very site you're looking at — built from scratch to sharpen frontend skills and create a digital home that reflects my work and growth.</p>
+            <div class="project-footer">
+              <a href="https://github.com/vedantsawant" target="_blank" class="project-link">GitHub →</a>
+              <span class="project-status">Live</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num mono">003</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Python</span><span>AI</span>
+            </div>
+            <h3>AI Experiment — Coming Soon</h3>
+            <p>Exploring basic AI/ML concepts and building a small project around them. Currently researching the right problem to solve.</p>
+            <div class="project-footer">
+              <span class="project-link muted">Dropping Soon</span>
+              <span class="project-status planned">Planned</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PORTFOLIO LINKS ───────────────────────────── -->
+  <section class="section links-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono accent">04 /</span> Find Me Online
+      </div>
+      <div class="links-grid">
+        <a href="https://github.com/vedantsawant" target="_blank" class="link-card">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">GitHub</span>
+            <span class="link-sub">Code & Projects</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+
+        <a href="https://notion.so" target="_blank" class="link-card">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.14c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">Notion</span>
+            <span class="link-sub">Notes & Planning</span>
+          </div>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono accent">05 /</span> Contact
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-title">
+            Let's build<br /><em>something.</em>
+          </h2>
+          <p>
+            Open to internships, collaborations, and interesting conversations. 
+            I respond fast — usually within a day.
+          </p>
+          <a href="mailto:vedantsawant824@gmail.com" class="email-link">
+            vedantsawant824@gmail.com
+          </a>
+          <p class="contact-meta mono">Mumbai, India · +91 98215 65493</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message →</button>
+          <p class="form-note mono" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono">© 2025 Vedant Sawant</span>
+      <span class="mono muted">Built from scratch · No frameworks</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
